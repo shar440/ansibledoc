@@ -1,0 +1,11 @@
+---
+-
+  name: "Run Updates"
+  hosts: 172.31.42.238
+  tasks:
+    -
+      win_updates:
+        category_names:
+          - SecurityUpdates
+        whitelist:
+          - KB4487028
